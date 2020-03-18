@@ -1,0 +1,115 @@
+body {
+	display: grid;
+	grid-template-rows: repeat(4, 100vh);
+	grid-template-areas: 
+	"slideshow"
+}
+
+/************** Navigation Menu **************/
+#nav-bar {
+	display: grid;
+	position: fixed;
+	grid-template-columns: repeat(6, 8vw);
+	column-gap: 2vw;
+	margin-top: 0.2vw;
+	padding-bottom: 0.4vw;
+	margin-left: 20%;
+	justify-items: center;
+	align-items: center;
+	border-bottom: 2px solid rgb(255, 255, 255, 0.4);
+}
+
+#logo {
+	margin-top: 20px;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	width: 4vw;
+	vertical-align: middle;
+}
+
+#logo-txt {
+	text-align: center;
+	font-size: 2vw;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.menu-item {
+	list-style: none;
+	font-family: 'Bellota', cursive;
+	font-size: 1.2vw;
+
+}
+
+.menu-item > a,
+#nav-bar > a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/************** Slideshow **************/
+header {
+	grid-area: slideshow;
+	-webkit-transition: background-image 0.8s ease-in-out;
+	transition: background-image 0.8s ease-in-out;
+	background-repeat: no-repeat;
+}
+
+#right-slide,
+#left-slide {
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	padding: 1vw 1.5vw;
+	margin-top: 18vw;
+	font-size: 4vw;
+	background-color: rgb(0, 0, 0, 0.2);
+    text-align: center;
+  	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+#left-slide {
+	float: left;
+}
+
+#right-slide {
+	float: right;
+}
+
+
+/********** Login and Shop **********/
+#reservation {
+	background-repeat:no-repeat;		/********** Add JS Code to Sign In Account **********/
+    border: 2px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+	text-align: center;
+  	text-decoration: none;
+  	padding: 15px;
+  	margin: 38vw auto auto 38vw;
+	font-size: 1.5vw;
+	color: white;
+	background-color: transparent;
+	border-radius: 60px;
+	font-family: 'Bellota', cursive;
+}
+
+#reservation:hover {
+
+	background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+#reservation:active {
+	background-color: rgb(0, 0, 0);
+}
+
