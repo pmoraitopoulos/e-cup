@@ -1,0 +1,100 @@
+/*************************************************|Ecosystem/Grid[1]|*************************************************/
+main {
+	grid-area: main;
+	grid-template-rows: repeat(2, 104vh);
+	grid-template-areas: 
+	"guide"
+	"info";
+}
+
+.eco-container {
+	grid-area: guide;
+	display: grid;
+	grid-template-rows: 8vw 10vw 30vw;
+	grid-row-gap: 3vh;
+	justify-items: center;
+	vertical-align: center;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0)), url('../../images/grid3.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-template-areas:
+	"title"
+	"description"
+	"guide";
+	border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+}
+
+.eco-title{
+	grid-area: title;
+	margin-top: 4vw;
+	font-size: 2vw;
+	font-family: 'Bellota', cursive;
+	color: white;
+}
+
+.eco-description {
+	grid-area: description;
+	padding: 0vw 10vw;
+	font-size: 1.6vw;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.eco-guide {
+	grid-area: guide;
+	display: grid;
+	grid-template-columns: repeat(5, 16vw);
+	justify-items: center;
+	grid-column-gap: 4vw;
+}
+
+.guide-item {
+	list-style-type: none;
+}
+
+/*Description of Item*/
+.guide-item > p {
+	color: white;
+	margin-bottom: 2vw;
+	font-size: 1.4vw;
+	text-align: center;
+}
+
+/*Item Image*/
+.pngImg { /************************ Remove PNG Background Here ************************/
+ 	width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+ }
+
+
+/*************************************************|Info/Grid[2]|*************************************************/
+.info-container {
+	grid-area: info;
+	display: grid;
+	grid-template-rows: 8vw 40vw;
+	grid-row-gap: 4vh;
+	justify-items: center;
+	grid-template-areas: 
+	"aboutHeader"
+	"aboutInfo";	
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0)), url('../../images/about.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about-title {
+	grid-area: aboutHeader;
+	margin-top: 4vw;
+	font-size: 2vw;
+	font-family: 'Bellota', cursive;
+	color: white;
+}
+
+.about-info {
+	grid-area: aboutInfo;
+	font-size: 1.6vw;
+	padding: 0vw 6vw;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}

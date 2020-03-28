@@ -50,8 +50,7 @@ footer > div {
 
 /*Social Media Icons*/
 .fa {
-  padding: 20px;
-  font-size: 30px;
+  padding: 0.8vw;
   width: 2vw;
   text-align: center;
   text-decoration: none;
@@ -61,7 +60,7 @@ footer > div {
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
-}
+}	
 
 /* Set a specific color for each brand */
 

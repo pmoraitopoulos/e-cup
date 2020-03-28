@@ -1,0 +1,91 @@
+/*************************************************|Products Section/Grid[0]|*************************************************/
+/************** Header == Slideshow Section **************/
+header {
+	grid-area: header;
+	-webkit-transition: background-image 0.4s ease-in-out;
+	-webkit-background-size: cover; 
+	transition: background-image 0.4s ease-in-out;
+	background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+}
+
+/*Left and Right Buttons On Header Section*/
+#right-slide,
+#left-slide {
+	background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+	padding: 0.5vw 1vw;
+	margin-top: calc(10vw + 100px);
+	font-size: 4vw;
+	background-color: rgb(0, 0, 0, 0.2);
+    text-align: center;
+  	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	border-radius: 20px;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/*Left Slide Hover And Effects*/
+#left-slide {
+	margin-left: 1vw;
+	float: left;
+}
+
+#left-slide:hover {
+	background-color: rgb(0, 0, 0, 0.6);
+}
+
+#left-slide:active {
+	background-color: rgb(0, 0, 0);
+}
+
+/*Right Slide Hover And Effects*/
+#right-slide {
+	margin-right: 1vw;
+	float: right;
+}
+
+#right-slide:hover {
+	background-color: rgb(0, 0, 0, 0.6);
+}
+#right-slide:active {
+	background-color: rgb(0, 0, 0);
+}
+
+/*Reserve A Cup System*/
+#reservation { 						/********************* JS Login Or Sign Up *********************/
+    border: 0.1vw solid white;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+	text-align: center;
+  	text-decoration: none;
+  	padding: 0.8vw;
+	font-size: 1.5vw;
+	color: white;
+	background-color: rgb(0, 0, 0, 0.4);
+	border-radius: 60px;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-size: 1.4vw;
+	text-align: center;
+	text-decoration: none;
+	margin: calc(32vw + 60px) auto auto 39.4vw;
+}
+
+#reservation:hover {
+	background-color: rgb(0, 0, 0, 0.6);
+}
+
+#reservation:active {
+	background-color: rgb(0, 0, 0);
+}
