@@ -5,29 +5,29 @@ header {
 	-webkit-transition: background-image 0.4s ease-in-out;
 	-webkit-background-size: cover; 
 	transition: background-image 0.4s ease-in-out;
-	background-repeat: no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
-    border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    border-bottom: 2px solid gray;
 }
 
 /*Left and Right Buttons On Header Section*/
 #right-slide,
 #left-slide {
-	background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-	padding: 0.5vw 1vw;
-	margin-top: calc(10vw + 100px);
+	padding: 0.2vw 1.2vw;
+	margin-top: 40vh;
 	font-size: 4vw;
 	background-color: rgb(0, 0, 0, 0.2);
     text-align: center;
   	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	color: white;
-	border-radius: 20px;
+	border-radius: 1vw;
+	transition-duration: 0.4s;
 }
 
 button::-moz-focus-inner {
@@ -36,7 +36,7 @@ button::-moz-focus-inner {
 
 /*Left Slide Hover And Effects*/
 #left-slide {
-	margin-left: 1vw;
+	margin-left: 1.4vw;
 	float: left;
 }
 
@@ -50,7 +50,7 @@ button::-moz-focus-inner {
 
 /*Right Slide Hover And Effects*/
 #right-slide {
-	margin-right: 1vw;
+	margin-right: 1.4vw;
 	float: right;
 }
 
@@ -63,13 +63,14 @@ button::-moz-focus-inner {
 
 /*Reserve A Cup System*/
 #reservation { 						/********************* JS Login Or Sign Up *********************/
+    margin: 80vh auto auto 39.4vw;
+    padding: 0.8vw;
     border: 0.1vw solid white;
     cursor: pointer;
     overflow: hidden;
     outline:none;
 	text-align: center;
   	text-decoration: none;
-  	padding: 0.8vw;
 	font-size: 1.5vw;
 	color: white;
 	background-color: rgb(0, 0, 0, 0.4);
@@ -78,8 +79,7 @@ button::-moz-focus-inner {
 	font-weight: normal;
 	font-size: 1.4vw;
 	text-align: center;
-	text-decoration: none;
-	margin: calc(32vw + 60px) auto auto 39.4vw;
+	transition-duration: 0.4s;
 }
 
 #reservation:hover {

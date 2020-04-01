@@ -6,7 +6,6 @@ footer {
 	column-gap: 10vw;
 	grid-template-areas: 
 	"media contact devs";
-    //margin-top: 14vw;
     background-color: white;
     justify-items: center;
     font-size: 2vw;

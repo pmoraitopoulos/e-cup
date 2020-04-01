@@ -1,6 +1,6 @@
 body {
-	display: inline-grid;
-	grid-template-rows: 50vw 100vw 12vw;
+	display: grid;
+	grid-template-rows: 100vh 312vh 40vh;
 	grid-template-areas: 
 	"header"
 	"main"

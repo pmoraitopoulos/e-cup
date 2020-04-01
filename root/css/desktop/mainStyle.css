@@ -1,19 +1,15 @@
-/*************************************************|Ecosystem/Grid[1]|*************************************************/
 main {
 	grid-area: main;
-	grid-template-rows: repeat(2, 104vh);
-	grid-template-areas: 
-	"guide"
-	"info";
+	grid-template-rows: repeat(3, 100vh);
 }
 
+/*************************************************|Ecosystem/Grid[1]|*************************************************/
 .eco-container {
-	grid-area: guide;
 	display: grid;
-	grid-template-rows: 8vw 10vw 30vw;
-	grid-row-gap: 3vh;
+	grid-template-rows: 20vh 30vh 50vh; /*50vh should be 42 for percision*/
+	min-height: 104vh;
+	grid-row-gap: 20px;
 	justify-items: center;
-	vertical-align: center;
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0)), url('../../images/grid3.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -21,7 +17,7 @@ main {
 	"title"
 	"description"
 	"guide";
-	border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+	border-bottom: 2px solid gray;
 }
 
 .eco-title{
@@ -61,18 +57,59 @@ main {
 }
 
 /*Item Image*/
-.pngImg { /************************ Remove PNG Background Here ************************/
- 	width: 100%; 
-    height: auto; 
+.pngImg {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: auto; 
+    height: 25vh; 
     object-fit: contain; 
  }
 
+/*************************************************|Maps/Grid[2]|*************************************************/
+.location-mapping {
+	display: grid;
+	grid-template-rows: 20vh 20vh 50vh;
+	min-height: 104vh;
+	justify-items: center;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0)), url('../../images/map.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 2px solid gray;
+}
 
-/*************************************************|Info/Grid[2]|*************************************************/
+.locations-title {
+	margin-top: 2.4vw;
+	font-size: 2vw;
+	font-family: 'Bellota', cursive;
+	color: white;
+}
+
+.map-item {
+	border: 2px solid white;
+	color: white;
+	padding: 1vw 1.4vw;
+	margin: 0.2vw;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+    overflow: hidden;
+	display: inline-block;
+	font-size: 1.2vw;
+	background-color: rgba(0,0,0,0.4);
+	font-family: 'Bellota Text', cursive;
+	transition-duration: 0.4s; 
+}
+
+.map-item:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+
+/*************************************************|Info/Grid[3]|*************************************************/
 .info-container {
 	grid-area: info;
 	display: grid;
-	grid-template-rows: 8vw 40vw;
+	grid-template-rows: 20vh 84vh;
 	grid-row-gap: 4vh;
 	justify-items: center;
 	grid-template-areas: 
@@ -96,5 +133,5 @@ main {
 	font-size: 1.6vw;
 	padding: 0vw 6vw;
 	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif; 
 }
