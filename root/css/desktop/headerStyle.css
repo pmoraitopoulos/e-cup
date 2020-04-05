@@ -2,6 +2,7 @@
 /************** Header == Slideshow Section **************/
 header {
 	grid-area: header;
+	background-size: cover;
 	-webkit-transition: background-image 0.4s ease-in-out;
 	-webkit-background-size: cover; 
 	transition: background-image 0.4s ease-in-out;
@@ -42,6 +43,7 @@ button::-moz-focus-inner {
 
 #left-slide:hover {
 	background-color: rgb(0, 0, 0, 0.6);
+	color: #ff9991;
 }
 
 #left-slide:active {
@@ -56,6 +58,7 @@ button::-moz-focus-inner {
 
 #right-slide:hover {
 	background-color: rgb(0, 0, 0, 0.6);
+	color: #ff9991;
 }
 #right-slide:active {
 	background-color: rgb(0, 0, 0);
@@ -84,6 +87,8 @@ button::-moz-focus-inner {
 
 #reservation:hover {
 	background-color: rgb(0, 0, 0, 0.6);
+	color: #ff9991;
+	border-color: #ffcbc7;
 }
 
 #reservation:active {

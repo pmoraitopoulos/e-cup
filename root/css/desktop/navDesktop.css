@@ -5,17 +5,15 @@
 	position: fixed;
 	grid-template-columns: repeat(3, 10vw) 14vw repeat(3, 10vw);
 	column-gap: 0.4vw;
-	margin-top: 0.2vw;
-	padding-bottom: 0.4vw;
-	margin-left: 12vw;
+	padding: 0vw 12vw 0.4vw 12vw;
 	justify-items: center;
 	align-items: center;
-	border-bottom: 2px solid rgb(255, 255, 255, 0.4);
+	background-color: rgba(0,0,0,0.8);
 }
 
 #logo {
 	margin-top: 20px;
-	border: 2px solid rgb(0,0,0,0.4);
+	border: 2px solid rgb(255, 62, 48);
 	border-radius: 50%;
 	width: 4vw;
 	vertical-align: middle;
@@ -37,4 +35,18 @@
 #nav-bar > a {
 	text-decoration: none;
 	color: white;
+}
+
+.menu-item > a {
+	border-bottom: 1px solid transparent;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+.menu-item > a:hover {
+	color: #ff9991;
+	border-bottom: 1px solid #ff9991;
 }
